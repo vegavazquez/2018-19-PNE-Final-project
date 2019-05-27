@@ -1,0 +1,168 @@
+main endpoint
+http://localhost:8000/
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FINAL PRACTICE</title>
+  </head>
+  <body style="background-color: Pink;">
+    <h1>FINAL PRACTICE </h1>
+
+
+
+
+
+<p>LIST OF ALL SPECIES( WITH  LIMIT)</p>
+<form action="/listSpecies" method="get">
+        limit number:
+        <input type = "text" size="3" name="limit"><br>
+        JSON:
+        <input type="checkbox" name="json" value="1"><br>
+        <input type="submit" size="4" value="send">
+</form>
+
+
+
+<p>KARYOTYPE</p>
+<form action="/karyotype" method="get">
+        name of the specie:
+        <input type = "text" size="12" name="specie"><br>
+        JSON:
+        <input type="checkbox" name="json" value="1"><br>
+        <input type="submit" size="4" value="send">
+
+</form>
+
+<p>CHROMOSOME LENGTH</p>
+<form action="/chromosomeLength" method="get">
+    name of the specie:
+        <input type = "text" size="12" name="specie"><br>
+    number of chromosome:
+        <input type = "text" size="3" name="chromo"><br>
+    JSON:
+        <input type="checkbox" name="json" value="1"><br>
+
+        <input type="submit" size="4" value="send">
+
+
+</form>
+
+
+
+  <p>HUMAN GENE</p>
+
+  <form action="/geneSeq" method ="get">
+      introduce a given human gene:
+        <input type="text" size="12" name="gene"><br>
+
+      JSON:
+        <input type="checkbox" name="json" value="1"><br>
+      <input type="submit" size="12" value="sequence of a human gene">
+
+
+
+  </form>
+
+
+    <p>GENE INFO</p>
+
+    <form action="/geneInfo" method="get">
+        Information about a human gene:
+         <input type="text" size="12" name="gene"><br>
+        JSON:
+        <input type="checkbox" name="json" value="1"><br>
+        <input type="submit" size="12" value="information">
+
+
+
+
+
+
+  </form>
+
+
+    <p>GENE CALCULATIONS</p>
+
+  <form action="/geneCalc" method="get">
+      calculation about a given gene:
+      <input type="text" size="12" name="gene"><br>
+      JSON:
+      <input type="checkbox" name="json" value="1"><br>
+      <input type="submit" size="12" value="calculations">
+
+  </form>
+
+
+    <p>GENE LIST</p>
+
+  <form action="/geneList" nethod="get">
+
+      chromosomes:
+      <input type="text" size="12" name="chromo"><br>
+      start:
+      <input type="text" size="12" name="start"><br>
+      end:
+      <input type="text" size="12" name="end"><br>
+      JSON:
+        <input type="checkbox" name="json" value="1"><br>
+      names of the genes located in the chromosomes:
+      <input type="submit" size="12" value="gene"><br>
+
+
+  </form>
+
+
+
+
+
+  </body>
+</html>
+
+
+/listSpecies
+http://localhost:8000/listSpecies?limit=12
+
+                                            <html>
+                                            <bpdy>
+                                            <ol><li>Mouse NZO/HlLtJ</li><li>Little spotted kiwi</li><li>Painted turtle</li><li>Mouse</li><li>Marmoset</li><li>Spotted gar</li><li>Tasmanian devil</li><li>Mummichog</li><li>Ocean sunfish</li><li>Ryukyu mouse</li><li>Mouse FVB/NJ</li><li>Monterrey platyfish</li></ol></body></html
+
+
+
+'karyotype'
+
+http://localhost:8000/karyotype?specie=mouse
+
+
+                                                            <html>
+                                                            <bpdy>
+                                                            <ol><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>X</li><li>Y</li><li>MT</li></ol>
+                                                         </body>
+                                                         </html
+
+
+
+
+'chromosomeLength'
+http://localhost:8000/chromosomeLength?specie=mouse&chromo=18
+
+                                                                        <html>
+                                                                        <bpdy>
+                                                                        <ol><li>90702639</li></ol>
+                                                                     </body>
+                                                                     </html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
